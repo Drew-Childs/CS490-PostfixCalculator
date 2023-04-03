@@ -20,7 +20,7 @@
     (failure (format "Cannot divide by zero!\nStack: ~a" stack))
     (success stack)))
 
-; <-- Calculator Operations
+; <-- Calculator Operations -->
 (define (perform-op stack op)
   (do [valid-stack <- (length-check stack)]
       [div-check <- (div-zero valid-stack op)]
